@@ -7,7 +7,6 @@ R pipeline accompanying the manuscript:
 
 This repository contains the modelling code used to train and evaluate machine-learning classifiers for clinical mastitis (CM), subclinical mastitis (SCM), and any-mastitis detection in Murrah buffaloes using udder-quarter infrared thermography (IRT) features.
 
-Figure-production code for the manuscript is **not** included here — this repository is the models, feature engineering, and quantitative evaluation only. The reported metrics can be reproduced from the CSV files the pipeline writes.
 
 ---
 
@@ -116,10 +115,6 @@ The raw dataset is **not included** in this repository. It is available from the
 - Calibration is done on out-of-fold predictions inside the training set only — the held-out test set is never touched during model or threshold selection.
 
 ---
-
-## Citation
-
-If you use this code, please cite the manuscript above and the software release (see [`CITATION.cff`](CITATION.cff)).
 
 ## License
 
