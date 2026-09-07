@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite both the software and the accompanying manuscript."
+title: "Mastitis detection in Murrah buffaloes from infrared thermography — analysis pipeline"
+abstract: >-
+  R pipeline for feature engineering, animal-aware splitting, isotonic
+  probability calibration, and Random Forest / XGBoost classification of
+  clinical mastitis (CM), subclinical mastitis (SCM), and any-mastitis
+  states in Murrah buffaloes from udder-quarter infrared thermography.
+authors:
+  - family-names: "[Your Surname]"
+    given-names: "[Your Given Name]"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    affiliation: "[Your Institution]"
+version: "1.0.0"
+date-released: "2026-01-01"
+license: MIT
+repository-code: "https://github.com/ektahooda/mastitis-irt-ml"
+keywords:
+  - infrared thermography
+  - mastitis
+  - Murrah buffalo
+  - random forest
+  - XGBoost
+  - probability calibration
+  - precision livestock farming
+preferred-citation:
+  type: article
+  title: "[Manuscript title]"
+  authors:
+    - family-names: "[Author 1 surname]"
+      given-names: "[Author 1 given name]"
+  journal: "[Journal name]"
+  year: 2026
+  doi: "10.xxxx/xxxxxx"

@@ -1,0 +1,52 @@
+# ============================================================
+# R / RStudio
+# ============================================================
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Renviron
+
+# renv (uncomment if you adopt renv)
+# renv/library/
+# renv/local/
+# renv/staging/
+
+# ============================================================
+# Data — kept out of version control
+# ============================================================
+data/*.xlsx
+data/*.xls
+data/*.csv
+data/*.tsv
+data/raw/
+!data/README.md
+
+# ============================================================
+# Pipeline outputs
+# ============================================================
+checkpoints_final/
+checkpoints/
+manuscript_main/
+manuscript_supp/
+*.rds
+*.pdf
+*.png
+*.tiff
+*.jpg
+*.jpeg
+!docs/**/*.png       # allow figures you deliberately commit under docs/
+
+# ============================================================
+# OS / editor cruft
+# ============================================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
