@@ -1,8 +1,7 @@
 # ================================================================
-# Mastitis-IRT classification pipeline (modelling core)
+# Mastitis-IRT classification pipeline
 # ================================================================
-# Accompanies: [Manuscript title, journal, year]
-#
+
 # This script trains and evaluates Random Forest and XGBoost
 # classifiers for four mastitis-detection tasks in Murrah buffaloes
 # from udder-quarter infrared thermography features:
