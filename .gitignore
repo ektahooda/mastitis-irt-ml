@@ -8,11 +8,6 @@
 *.Rproj
 .Renviron
 
-# renv (uncomment if you adopt renv)
-# renv/library/
-# renv/local/
-# renv/staging/
-
 # ============================================================
 # Data — kept out of version control
 # ============================================================
@@ -26,17 +21,8 @@ data/raw/
 # ============================================================
 # Pipeline outputs
 # ============================================================
-checkpoints_final/
-checkpoints/
-manuscript_main/
-manuscript_supp/
+results/
 *.rds
-*.pdf
-*.png
-*.tiff
-*.jpg
-*.jpeg
-!docs/**/*.png       # allow figures you deliberately commit under docs/
 
 # ============================================================
 # OS / editor cruft
