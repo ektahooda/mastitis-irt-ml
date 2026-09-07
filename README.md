@@ -2,9 +2,9 @@
 
 R pipeline accompanying the manuscript:
 
-> **[Manuscript title]**
-> [Author list]
-> *[Journal name]*, [year]. DOI: [link once available]
+> **[Non-invasive mastitis screening in Murrah buffaloes using quarter-level infrared thermography and machine learning]**
+> [Ekta Hooda1#, Sunesh Balhara1#, Mehar Singh Khatkar2, Ashok Boora1, Sarita Yadav1, Manish Tiwari1, Sanjay Choudhary1, Savita Nandal1, SK Phulia1, Mustafa Hasan Jan1, FC Tuteja1 and Ashok Kumar Balhara1*]
+
 
 This repository contains the full analysis code used to build and evaluate machine-learning classifiers for clinical mastitis (CM), subclinical mastitis (SCM), and any-mastitis detection in Murrah buffaloes using udder-quarter infrared thermography (IRT) features.
 
@@ -15,14 +15,14 @@ This repository contains the full analysis code used to build and evaluate machi
 Starting from an Excel sheet of per-animal thermal readings (four udder quarters + four teat quarters, mean and max temperatures) plus animal metadata (parity, DIM, age) and environmental covariates (ambient temperature, relative humidity), the pipeline:
 
 1. **Engineers features** — inter-quarter differentials, standard deviations, ranges, and asymmetry indices from the raw thermal columns.
-2. **Splits animal-aware** — no animal appears in both train and test sets (following Bobbo et al., 2023, *J Dairy Sci*).
+2. **Splits animal-aware** — no animal appears in both train and test sets.
 3. **Trains three feature-set variants** — `ANIMAL` (metadata only), `THERMALENV` (thermal + environment), `SIMPLE` (headline set: thermal + environment + metadata + engineered asymmetry).
 4. **Fits Random Forest and XGBoost separately** — no ensembling; each model reported on its own.
 5. **Calibrates probabilities** — isotonic recalibration on cross-validation out-of-fold predictions for both RF and XGB.
 6. **Bakes decision thresholds into the model** — Youden's-J thresholds derived on calibrated OOF scores, packaged with each classifier as a self-contained object.
 7. **Evaluates four tasks** — `healthy vs CM`, `healthy vs SCM`, `healthy vs any-mastitis`, and a three-class `healthy / CM / SCM` formulation.
 8. **Runs feature-importance analysis** — Boruta, permutation importance, and SHAP (via `fastshap`).
-9. **Writes manuscript figures and tables** — confusion matrices, ROC curves, calibration plots, and CSV summaries with 2000-iteration bootstrap CIs.
+
 
 ---
 
@@ -111,5 +111,5 @@ MIT — see [`LICENSE`](LICENSE).
 
 ## Contact
 
-[Corresponding author name] — [email]
+[Ashok Kumar Balhara] — [balharaak@gmail.com]
 [Institution]
